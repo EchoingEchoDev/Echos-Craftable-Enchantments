@@ -16,13 +16,13 @@ public class CreativeTab {
     // Creates a creative tab with the id "examplemod:example_tab" for the example item, that is placed after the combat tab
     public static final DeferredHolder<CreativeModeTab, CreativeModeTab> EXAMPLE_TAB = CREATIVE_MODE_TABS.register("c_enchants_tab", () -> CreativeModeTab.builder()
             .title(Component.translatable("itemGroup.c_enchants")) //The language key for the title of your CreativeModeTab
-            .withTabsBefore(net.minecraft.world.item.CreativeModeTabs.COMBAT)
+            .withTabsBefore(CreativeModeTabs.COMBAT)
             .icon(() -> Items.ENCHANTED_BOOK.getDefaultInstance())
             .displayItems((parameters, output) -> {
-                output.accept(ItemRegister.ENCHANTED_PAGES.get());
-                output.accept(ItemRegister.AQUA_AFFINITY_RUNE.get());
-
-
+                for (var item:
+                     ItemRegister.ITEMS.getEntries()) {
+                    output.accept(item.get());
+                }
 
             }).build());
 

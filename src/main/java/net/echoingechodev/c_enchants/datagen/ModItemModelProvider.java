@@ -13,7 +13,10 @@ public class ModItemModelProvider extends ItemModelProvider {
 
     @Override
     protected void registerModels() {
-        basicItem(ItemRegister.ENCHANTED_PAGES.get());
-        basicItem(ItemRegister.AQUA_AFFINITY_RUNE.get());
+
+        for (var item:
+                ItemRegister.ITEMS.getEntries()) {
+            basicItem(item.get());
+        }
     }
 }
