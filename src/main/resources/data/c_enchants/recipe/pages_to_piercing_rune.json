@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:smithing_transform",
+  "base": {
+    "item": "c_enchants:enchanted_pages"
+  },
+  "addition": {
+    "item": "c_enchants:piercing_rune"
+  },
+  "template": {
+    "item": "minecraft:book"
+  },
+  "result": {
+    "id": "minecraft:enchanted_book",
+    "components": {
+      "minecraft:enchantments": {
+        "levels": {
+          "minecraft:piercing": 1
+        },
+        "show_in_tooltip": true
+      }
+    }
+  }
+}
