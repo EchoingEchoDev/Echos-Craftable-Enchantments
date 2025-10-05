@@ -17,7 +17,7 @@ public class CreativeTab {
     public static final DeferredHolder<CreativeModeTab, CreativeModeTab> EXAMPLE_TAB = CREATIVE_MODE_TABS.register("c_enchants_tab", () -> CreativeModeTab.builder()
             .title(Component.translatable("itemGroup.c_enchants")) //The language key for the title of your CreativeModeTab
             .withTabsBefore(CreativeModeTabs.COMBAT)
-            .icon(() -> Items.ENCHANTED_BOOK.getDefaultInstance())
+            .icon(() -> ItemRegister.ENCHANTED_PAGES.get().getDefaultInstance())
             .displayItems((parameters, output) -> {
                 for (var item:
                      ItemRegister.ITEMS.getEntries()) {
