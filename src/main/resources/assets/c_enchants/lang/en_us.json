@@ -42,5 +42,7 @@
   "item.c_enchants.swift_sneak_rune": "Rune of Swift Sneak",
   "item.c_enchants.thorns_rune": "Rune of Thorns",
   "item.c_enchants.unbreaking_rune": "Rune of Unbreaking",
-  "item.c_enchants.wind_burst_rune": "Rune of Wind Burst"
+  "item.c_enchants.wind_burst_rune": "Rune of Wind Burst",
+
+  "tooltip.c_enchants.enchanted_page.tooltip": "Combine these with a Book and any Rune in a Smithing Table to get an Enchanted Book"
 }
